@@ -48,6 +48,7 @@ class News
             )
         ));
     }
+
     /**
      * @var int
      */

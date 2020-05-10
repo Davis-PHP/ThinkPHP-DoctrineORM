@@ -7,7 +7,7 @@ namespace app\controller;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Tools\Setup;
 
-class EM
+trait EM
 {
     public function getEntityManager()
     {
@@ -21,7 +21,7 @@ class EM
             'user' => 'root',
             'password' => '',
             'dbname' => 'tpsix',
-            'charset' => 'utf8'
+            'charset' => 'utf8',
         );
         return EntityManager::create($conn, $config);
     }
